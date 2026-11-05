@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="17" tilewidth="64" tileheight="64" infinite="0" nextlayerid="9" nextobjectid="118">
+ <tileset firstgid="1" source="envirnment.tsx"/>
+ <tileset firstgid="541" source="objset.tsx"/>
+ <layer id="1" name="ground" class="layer_ground" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBzFo3gUj+JRPIpH8YjAAPxlAf8=
+  </data>
+ </layer>
+ <layer id="2" name="floor" class="layer_floor" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DgATcBPNzsHUi7B6O9tAT0slcLCeOSozbQIgMPhL3UAgPlX3LsHswAAE+SCwE=
+  </data>
+ </layer>
+ <layer id="3" name="wall-window-door" class="layer_wall-window-door" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowAB+oA4Hw/OGyB3dQ2QvcU0MreXgPxORtrYSygcB8peQuFBLMhlQE2vPQTUUytdoaeTDiQ3FAHxFUYIhuWvTirZO1TAkYF2AIWAWumTVICcjojBRUSaCwDx1BgA
+  </data>
+ </layer>
+ <layer id="4" name="interior" class="layer_interior" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUoIPGgXbAKKA5OMRIXfNcGBkcnIHYEYipa/LgBg+A4fgIGpar6WivABMEo4PHVI5XGODDY+5+oNwBID5II7upDQC1RgiZ
+  </data>
+ </layer>
+ <layer id="5" name="vegetation" class="layer_vegetation" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh6YDsVzdoKxNuoaB6x4AIQXxwAe0fBwABqptmBMH8UDD9AbNlH7bQ1WvYNPAAAf+II9Q==
+  </data>
+ </layer>
+ <layer id="6" name="stone" class="layer_rock" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBia4O1AO2AYAUrD8i0VzCDX3oECo+kPE4y0NDCcwGheQoDB5h5aAABlLgow
+  </data>
+ </layer>
+ <layer id="7" name="decoration" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg84OpAO4AIQG03Usu8q2iY1vZhM48Usyl1x1Ukmtp+aiBgL7LdlIKPJKglJn4HM2ijkbkDHR4cjJTpR49TbHFMDT8SCn9K0tZ1PHINBOxEpskFs5DYdjjiAz3vEutfTjTzZqHZhwtQmi5oCQC1tCMd
+  </data>
+ </layer>
+ <objectgroup id="8" name="obstacle">
+  <object id="9" name="stool" type="table" x="896" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="11" name="wall" type="wall" x="1280" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="13" name="box" type="box" x="1156" y="388" width="54" height="54">
+   <properties>
+    <property name="movable" type="bool" value="true"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="14" name="sofa-table" type="table" x="1088" y="896" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="wall" type="wall" x="512" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="17" name="wall" type="wall" x="512" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="45" name="fridge" type="fridge" x="576" y="986" width="64" height="36.0621">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="20" name="gas" type="gas" x="576" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="21" name="basin" type="basin" x="640" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="22" name="platform" type="platform" x="704" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="24" name="sofa-small" type="sofa" x="1216" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="29" name="bush" type="bush" x="256" y="128" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="31" name="bush" type="bush" x="960" y="64" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="32" name="bush" type="bush" x="128" y="512" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="33" name="bush" type="bush" x="192" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="34" name="bush" type="bush" x="512" y="448" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="35" name="stone" type="stone" x="1024" y="64" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="36" name="stone" type="stone" x="1664" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="46" name="stone" type="stone" x="1600" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="37" name="stone" type="stone" x="1600" y="320" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="38" name="stone" type="stone" x="1664" y="384" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="39" name="stone" type="stone" x="1664" y="768" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="41" name="stone" type="stone" x="1728" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="40" name="stone" type="stone" x="192" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="42" name="stone" type="stone" x="256" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="43" name="stone" type="stone" x="320" y="576" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="44" name="stone" type="stone" x="576" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="47" name="knife" type="knife" x="895.701" y="447.701">
+   <properties>
+    <property name="equip" type="bool" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="start-point" type="point" x="64" y="64">
+   <point/>
+  </object>
+  <object id="49" name="glass" type="glass" gid="541" x="768" y="384" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="50" name="glass" type="glass" gid="541" x="768" y="448" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="54" name="glass" type="glass" gid="541" x="512" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="56" name="glass" type="glass" gid="541" x="512" y="896" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="55" name="glass" type="glass" gid="541" x="512" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="57" name="hitman-point" type="point" x="1408" y="512">
+   <point/>
+  </object>
+  <object id="58" name="zombie-point" type="point" x="320" y="960">
+   <point/>
+  </object>
+  <object id="59" name="npc-point" type="point" x="576" y="832">
+   <point/>
+  </object>
+  <object id="60" name="glass" type="glass" gid="2147484189" x="1280" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="61" name="glass" type="glass" gid="2147484189" x="1280" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="62" name="glass" type="glass" gid="2147484189" x="1280" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="63" name="bush" type="bush" x="320" y="128" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="64" name="bush" type="bush" x="320" y="192" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="65" name="bush" type="bush" x="256" y="192" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="66" name="bush" type="bush" x="1472" y="768" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="67" name="bush" type="bush" x="1536" y="768" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="68" name="bush" type="bush" x="1536" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="69" name="bush" type="bush" x="1472" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="70" name="dining" type="table" x="704" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="71" name="dining" type="chair" x="704" y="896" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="72" name="dining" type="chair" x="768" y="896" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="73" name="dining" type="table" x="768" y="832" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="74" name="wall" type="wall" x="512" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="75" name="wall" type="wall" x="576" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="76" name="wall" type="wall" x="640" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="77" name="wall" type="wall" x="704" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="78" name="wall" type="wall" x="768" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="79" name="wall" type="wall" x="832" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="80" name="wall" type="wall" x="896" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="81" name="wall" type="wall" x="960" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="82" name="wall" type="wall" x="1024" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="83" name="wall" type="wall" x="1088" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="84" name="wall" type="wall" x="1152" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="85" name="wall" type="wall" x="1216" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="86" name="wall" type="wall" x="1280" y="1024" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="87" name="wall" type="wall" x="512" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="88" name="wall" type="wall" x="576" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="89" name="wall" type="wall" x="640" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="90" name="wall" type="wall" x="704" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="91" name="wall" type="wall" x="768" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="92" name="wall" type="wall" x="768" y="576" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="93" name="wall" type="wall" x="768" y="512" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="94" name="wall" type="wall" x="768" y="448" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="95" name="wall" type="wall" x="768" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="96" name="wall" type="wall" x="832" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="97" name="wall" type="wall" x="896" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="98" name="wall" type="wall" x="960" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="99" name="wall" type="wall" x="1152" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="100" name="wall" type="wall" x="1216" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="101" name="wall" type="wall" x="1280" y="704" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="102" name="wall" type="wall" x="1280" y="640" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="103" name="wall" type="wall" x="1280" y="576" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="104" name="wall" type="wall" x="1280" y="384" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="105" name="wall" type="wall" x="1280" y="320" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="106" name="wall" type="wall" x="768" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="107" name="wall" type="wall" x="832" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="108" name="wall" type="wall" x="896" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="109" name="wall" type="wall" x="960" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="110" name="wall" type="wall" x="1024" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="111" name="wall" type="wall" x="1088" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="112" name="wall" type="wall" x="1152" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="113" name="wall" type="wall" x="1216" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="114" name="wall" type="wall" x="1280" y="256" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="115" name="sofa" type="sofa" x="1024" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="116" name="sofa" type="sofa" x="1088" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="117" name="sofa" type="sofa" x="1152" y="960" width="64" height="64">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

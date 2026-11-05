@@ -1,0 +1,39 @@
+Game Engine
+===========
+
+Architecture
+------------
+
+GameEngine owns the reusable engine services: entity management, rendering,
+physics, scene management, and runtime configuration. It owns the main loop and
+calls each scene's input, update, and render steps. Scenes and input actions
+receive the engine explicitly; they do not depend on a global singleton.
+
+SceneManager accepts named scene factories. Register application scenes at the
+composition root (src/main.cpp), then select the initial scene. A scene change
+stops the current scene and creates the requested scene through its factory.
+
+EngineConfig contains window settings, player defaults, asset paths, map object
+identifiers, and input bindings. Pass a customized EngineConfig to GameEngine
+to adapt the game without editing engine systems. Assets are loaded through the
+Asset interface, and scene-specific resources remain owned by their scene.
+
+Build
+-----
+
+Configure and build with CMake:
+
+    cmake -S . -B build
+    cmake --build build
+
+The reusable engine is built as the game_engine static library, and
+Game-Engine is the application executable. CMake copies assets to the build
+tree and supplies that path through GAME_ASSET_DIR.
+
+Adding a scene
+--------------
+
+Implement a Scene subclass and register a factory with GameEngine::registerScene.
+The factory should construct a fresh scene instance with the engine reference
+and its configured scene name. Add the source to src; CMake discovers files
+under that directory.

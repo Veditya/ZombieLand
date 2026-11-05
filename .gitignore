@@ -1,0 +1,27 @@
+# CMake build directories and generated files
+/build/
+/build-*/
+/cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# Compiled artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+/Game-Engine
+/tilemap_demo
+
+# Runtime and operating-system files
+/log.txt
+.DS_Store
+
+# IDE-generated project metadata
+.idea/
