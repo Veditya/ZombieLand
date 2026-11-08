@@ -16,10 +16,12 @@ struct InputBindings
     sf::Keyboard::Key moveRight = sf::Keyboard::Right;
     sf::Keyboard::Key moveUp = sf::Keyboard::Up;
     sf::Keyboard::Key moveDown = sf::Keyboard::Down;
-    sf::Keyboard::Key select = sf::Keyboard::Enter;
-    sf::Keyboard::Key back = sf::Keyboard::Escape;
-    sf::Keyboard::Key toggleCollisionBounds = sf::Keyboard::D;
     sf::Mouse::Button shoot = sf::Mouse::Left;
+
+    sf::Keyboard::Key back = sf::Keyboard::Escape;
+    sf::Keyboard::Key select = sf::Keyboard::Enter;
+    sf::Keyboard::Key toggleCollisionBounds = sf::Keyboard::D;
+    
     std::string moveUpLabel = "UP";
     std::string moveDownLabel = "DOWN";
     std::string selectLabel = "ENTER";
